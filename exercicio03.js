@@ -1,10 +1,10 @@
-let numeros = window.prompt("Números par ou ímpar")
+let Number = window.prompt("Números par ou ímpar")
 
-var Numero = 10;
-var resto = Numero % 2;
-
-if (resto == 0) {
-    alert("par");
-} else {
-    alert("impar");
+if (Number % 2 == 0) {
+    console.log("Ele é par")
 }
+
+else {
+    console.log("Ele é ímpar")
+}
+
