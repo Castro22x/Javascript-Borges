@@ -11,6 +11,6 @@ if (valor <= 100) {
 
 let valorFinal = valor - desconto;
 
-console.log("Preço original: R$", valor);
-console.log("Valor do desconto: R$", desconto);
-console.log("Preço final: R$", valorFinal);
+console.log("Preço original: R$", valor.toFixed(2));
+console.log("Valor do desconto: R$", desconto.toFixed(2));
+console.log("Preço final: R$", valorFinal.toFixed(2));
