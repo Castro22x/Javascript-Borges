@@ -1,4 +1,4 @@
-let peso = Number(prompt("Digite seu peso em kg: "));
+let peso = Number(prompt("Digite seu peso em quilogramas: "));
 let altura = Number(prompt("Digite sua altura em metros: "));
 
 let imc = peso / (altura * altura);
