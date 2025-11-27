@@ -97,40 +97,52 @@ function anoNascimento() {
     }
 }
 
-let selecionado = window.prompt("Digite o numero do exercício")
+do {
+    opcao = parseInt(prompt(`
+                              🇧🇷 MENU DE EXERCICIOS 🇧🇷
 
+Digite o Números das opções;
 
-while (selecionado !== "0") {
+0-Sair
+1-Login
+2-Par-Ímpar
+3-IMC
+4-Numeros crescente
+5-Idade com data de nascimento
+    `))
 
-    switch (selecionado) {
-        case "1":
-            Login()
-            selecionado = window.prompt("Digite o numero do exercício")
+    switch (opcao) {
+        case 0:
+            alert("Volte sempre 😁");
             break;
 
-        case "2":
-            Numeros()
-            break;
-        case "3":
-            Peso()
+        case 1:
+            Login();
             break;
 
-        case "4":
-            crescente()
+        case 2:
+            Numeros();
             break;
 
-        case "5":
-            anoNascimento()
+        case 3:
+            Peso();
             break;
 
-        case "0":
-            selecionado = 0;
+        case 4:
+            crescente();
+        case 5:
+            anoNascimento();
             break;
 
+            break;
 
         default:
-            console.log("Valor não aceita")
+            alert("💁🏻 Não entendi o que você digitou. Tente escolher uma opção válida 😉")
             break;
     }
-    selecionado = window.prompt("Digite o numero do exercício: ")
-}
+
+
+} while (opcao !== 0);
+
+
+
