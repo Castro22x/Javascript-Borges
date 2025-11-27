@@ -144,5 +144,6 @@ Digite o Números das opções;
 
 } while (opcao !== 0);
 
-
-
+function Login(){
+    alert("Login realizado com sucesso😁")
+}
